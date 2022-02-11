@@ -1,0 +1,9 @@
+.site-nav__list,
+.contacts,
+.page-header,
+.site-nav {
+  display: flex;
+}
+.page-header {
+  @extend %container;
+}

@@ -1,0 +1,15 @@
+.footer,
+.footer-portfolio {
+  background-color: $backgraund-hero-and-foter-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  justify-content: flex-start;
+  display: flex;
+}
+.container {
+  @extend %container;
+}
+.addres-list {
+  display: flex;
+  align-items: baseline;
+}
