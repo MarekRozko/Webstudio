@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студия</title>
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main-original.min.css" />
 </head>
 <body>
         <!-- Шапка сайта(header) -->
             <div class="hed-line">
                 <div class="container">
                     <header class="page-header">
-                        <nav class="site-nav">
+                        <nav class="site-nav"> 
                             <a class="site-nav__logo" href="./index.html">
                                 <span class="site-nav__logo--color">Web</span>Studio</a>
+                            <button type="button" class="menu-toggle js-open-menu is-open" aria-expanded="false" aria-controls="mobile-menu">
+                                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                                    <use class="menu-button__icon-menu" href="./images/sprite-original.svg#menu-mobile"></use>
+                                </svg>
+                            </button>
                             <ul class="site-nav__list list">
                                 <li class="site-nav__item">
                                     <a class="site-nav__link site-nav__link--active" href="./index.html">Студия</a>
@@ -54,7 +59,28 @@
         <!-- Главный контент страницы -->
         <main>
             <!--Героик  -->
-            
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button class="menu-toggle js-close-menu">
+                        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                            <use class="menu-button__icon-close" href="./images/sprite-original.svg#close-mobile"></use>
+                        </svg>
+                    </button>
+                    <ul class="mobile-menu">
+                        <li><a class="mobile-menu__link" href="">Студия</a></li>
+                        <li><a class="mobile-menu__link" href="">Портфолио</a></li>
+                        <li><a class="mobile-menu__link" href="">Контакты</a></li>
+                        <ul class="mobile-menu-contacts">
+                            <li class="mobile-menu-contacts__item"><a class="mobile-menu-contacts__link-tel" href="">+38 096 111 11 11</a></li>
+                            <li class="mobile-menu-contacts__item"><a class="mobile-menu-contacts__link-amail" href="">info@devstudio.com</a></li>
+                        </ul>
+                        <ul class="social-mobile-menu">
+                            <li class="social-mobile-menu__item"><a class="social-mobile-menu__link" href="">Instagram</a></li>
+                            <li class="social-mobile-menu__item"><a class="social-mobile-menu__link" href="">Twitter</a></li>
+                            <li class="social-mobile-menu__item"><a class="social-mobile-menu__link" href="">Facebook</a></li>
+                            <li class="social-mobile-menu__item"><a class="social-mobile-menu__link" href="">LinkedIn</a></li>
+                        </ul>
+                    </ul>
+                </div>
                 <section class="hero overlay"> 
                     <div class="container">
                         <h1 class="hero__title list">Эффективные решения для вашего бизнеса</h1>
@@ -477,6 +503,10 @@
                 </form>
             </div>
         </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

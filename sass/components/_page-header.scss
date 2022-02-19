@@ -2,8 +2,9 @@
 .contacts,
 .page-header,
 .site-nav {
-  display: flex;
+  display: block;
 }
-.page-header {
-  @extend %container;
-}
+
+// .hed-line {
+//   border-bottom: 1px solid #ececec;
+// }

@@ -1,14 +1,27 @@
 .site-nav__logo {
-  display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: $title-text-color;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
   &--color {
     color: $accent-color;
   }
+}
+
+.footer__site-nav__logo {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  display: inline-block;
+  color: $primary-bg-color;
+}
+.footer__site-nav__logo--color {
+  color: $accent-color;
 }
