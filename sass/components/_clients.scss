@@ -1,6 +1,12 @@
 .section {
-  @extend %section;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
+
 .clients,
 .clients__list {
   @extend %list;
@@ -12,11 +18,30 @@
   text-align: center;
   color: $title-text-color;
   margin-bottom: 50px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
 .clients__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
 }
 .clients__icon {
   width: 106px;
@@ -28,7 +53,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -42,10 +67,24 @@
     color: $accent-color;
     border-color: $accent-color;
   }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 }
 .clients__item {
-  margin-right: 30px;
-}
-.clients__item:last-child {
-  margin-right: 0;
+  margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 6 - 30px);
+  }
 }

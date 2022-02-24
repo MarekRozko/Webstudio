@@ -15,11 +15,7 @@
                         <nav class="site-nav"> 
                             <a class="site-nav__logo" href="./index.html">
                                 <span class="site-nav__logo--color">Web</span>Studio</a>
-                            <button type="button" class="menu-toggle js-open-menu is-open" aria-expanded="false" aria-controls="mobile-menu">
-                                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                                    <use class="menu-button__icon-menu" href="./images/sprite-original.svg#menu-mobile"></use>
-                                </svg>
-                            </button>
+
                             <ul class="site-nav__list list">
                                 <li class="site-nav__item">
                                     <a class="site-nav__link site-nav__link--active" href="./index.html">Студия</a>
@@ -52,48 +48,73 @@
                                 </a>
                             </li>
                         </ul>
-                
+                        <button type="button" class="menu-open-btn">
+                            <svg width="40" height="40">
+                                <use href="./images/sprite-original.svg#menu-mobile"></use>
+                            </svg>
+                        </button>
+                         <div class="mob-menu is-hidden">
+                            <div class="container-mobile">
+                                <div class="mob-menu-top">
+                                    <button type="button" class="menu-close-btn">
+                                        <svg width="40" height="40">
+                                            <use href="./images/sprite-original.svg#close-mobile"></use>
+                                        </svg>
+                                    </button>
+                                    <ul class="mob-menu-list list">
+                                        <li class="mob-menu-list__item">
+                                            <a class="mob-menu-list__link mob-menu-list__link--active" href="./index.html">Студия</a>
+                                        </li>
+                                        <li class="mob-menu-list__item">
+                                            <a class="mob-menu-list__link" href="./portfolio.html">Портфолио</a>
+                                        </li>
+                                        <li class="mob-menu-list__item">
+                                            <a class="mob-menu-list__link" href="">Контакты</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mob-menu-bottom">
+                                    <div class="mob-contacts">
+                                        <a href="tel:+380441111111" class="mob-contacts__tel">+38 044 111 11 11</a>
+                                        <a href="mailto:info@devstudio.com" class="mob-contacts__mail">info@devstudio.com</a>
+                                          
+                                    </div>
+                                <ul class="mob-soc-list list">
+                                    <li class="mob-soc-list__item">
+                                        <a href="" class="mob-soc-list__link">Instagram</a>
+                                    </li>
+                                    <li class="mob-soc-list__item">
+                                        <a href="" class="mob-soc-list__link">Twittet</a>
+                                    </li>
+                                    <li class="mob-soc-list__item">
+                                        <a href="" class="mob-soc-list__link">Facebook</a>
+                                    </li>
+                                    <li class="mob-soc-list__item">
+                                        <a href="" class="mob-soc-list__link">Linkedin</a>
+                                    </li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
                     </header>
                 </div>
             </div>
         <!-- Главный контент страницы -->
         <main>
             <!--Героик  -->
-                <div class="menu-container js-menu-container" id="mobile-menu">
-                    <button class="menu-toggle js-close-menu">
-                        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                            <use class="menu-button__icon-close" href="./images/sprite-original.svg#close-mobile"></use>
-                        </svg>
-                    </button>
-                    <ul class="mobile-menu">
-                        <li><a class="mobile-menu__link" href="">Студия</a></li>
-                        <li><a class="mobile-menu__link" href="">Портфолио</a></li>
-                        <li><a class="mobile-menu__link" href="">Контакты</a></li>
-                        <ul class="mobile-menu-contacts">
-                            <li class="mobile-menu-contacts__item"><a class="mobile-menu-contacts__link-tel" href="">+38 096 111 11 11</a></li>
-                            <li class="mobile-menu-contacts__item"><a class="mobile-menu-contacts__link-amail" href="">info@devstudio.com</a></li>
-                        </ul>
-                        <ul class="social-mobile-menu">
-                            <li class="social-mobile-menu__item"><a class="social-mobile-menu__link" href="">Instagram</a></li>
-                            <li class="social-mobile-menu__item"><a class="social-mobile-menu__link" href="">Twitter</a></li>
-                            <li class="social-mobile-menu__item"><a class="social-mobile-menu__link" href="">Facebook</a></li>
-                            <li class="social-mobile-menu__item"><a class="social-mobile-menu__link" href="">LinkedIn</a></li>
-                        </ul>
-                    </ul>
-                </div>
-                <section class="hero overlay"> 
+                <!-- <section class="hero overlay"> 
                     <div class="container">
                         <h1 class="hero__title list">Эффективные решения для вашего бизнеса</h1>
-                        <button data-modal-open class="hero__button" type="button">Заказать услугу</button>
-                        <div class="backdrop is-hidden" data-modal>
+                        <button data-modal-open class="hero__button" type="button">Заказать услугу</button> -->
+                        <!-- <div class="backdrop is-hidden" data-modal>
                             <div class="modal">
                                 <button data-modal-close class="modal__button" type="button">
                                     <svg class="modal__icon" width=11px, height=11px>
                                         <use href="images/sprite-original.svg#icon-cross"></use>
                                     </svg>
-                                </button>
+                                </button> -->
                                 
-                                <form class="form">
+                                <!-- <form class="form">
                                     <p class="form__text list">Оставьте свои данные, мы вам перезвоним</p>
                                     <div class="form__field">
                                         <label for="name" class="form__label">Имя</label>
@@ -147,7 +168,7 @@
                     </div>
                 </section>
                     
-            <!-- Приемущество сайта -->
+            <-- Приемущество сайта -->
             <section class="section">
                 <div class="container">
                     <h2  hidden class="benefits list">Наши Приемущества</h2>
@@ -192,8 +213,8 @@
                 </div>
         
             </section>
-            <!-- Чем занимаеться компания -->
-            <section class="working">
+            <!--Чем занимаеться компания -->
+            <!-- <section class="working">
                 <div class="container">
                     <h2 class="work list">Чем мы занимаемся</h2>
                     <ul class="work__list list">
@@ -219,7 +240,7 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </section>  -->
             <!-- Команда -->
             <section class="team-section section">
                 <div class="container">
@@ -233,28 +254,28 @@
                                 <ul class="social-gruop list">
                                     <li class="social-gruop__item">
                                         <a class="social-gruop__link list" href="">
-                                            <svg class="social-gruop__icon">
+                                            <svg class="social-gruop__icon" width="20" height="20">
                                                 <use href="./images/sprite-original.svg#icon-instagram"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="social-gruop__item">
                                         <a class="social-gruop__link list" href="">
-                                            <svg class="social-gruop__icon">
+                                            <svg class="social-gruop__icon"  width="20" height="20">
                                                 <use href="./images/sprite-original.svg#icon-twitter"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="social-gruop__item">
                                         <a class="social-gruop__link list" href="">
-                                            <svg class="social-gruop__icon">
+                                            <svg class="social-gruop__icon"  width="20" height="20">
                                                 <use href="./images/sprite-original.svg#icon-facebook"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="social-gruop__item">
                                         <a class="social-gruop__link list" href="">
-                                            <svg class="social-gruop__icon">
+                                            <svg class="social-gruop__icon"  width="20" height="20">
                                                 <use href="./images/sprite-original.svg#icon-linkedin"></use>
                                             </svg>
                                         </a>
@@ -271,28 +292,28 @@
                                 <ul class="social-gruop list">
                                     <li class="social-gruop__item">
                                         <a class="social-gruop__link list" href="">
-                                            <svg class="social-gruop__icon">
+                                            <svg class="social-gruop__icon" width="20" height="20">
                                                 <use href="./images/sprite-original.svg#icon-instagram"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="social-gruop__item">
                                         <a class="social-gruop__link list" href="">
-                                            <svg class="social-gruop__icon">
+                                            <svg class="social-gruop__icon" width="20" height="20">
                                                 <use href="./images/sprite-original.svg#icon-twitter"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="social-gruop__item">
                                         <a class="social-gruop__link list" href="">
-                                            <svg class="social-gruop__icon">
+                                            <svg class="social-gruop__icon" width="20" height="20">
                                                 <use href="./images/sprite-original.svg#icon-facebook"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="social-gruop__item">
                                         <a class="social-gruop__link list" href="">
-                                            <svg class="social-gruop__icon">
+                                            <svg class="social-gruop__icon" width="20" height="20">
                                                 <use href="./images/sprite-original.svg#icon-linkedin"></use>
                                             </svg>
                                         </a>
@@ -309,28 +330,28 @@
                                 <ul class="social-gruop list">
                                     <li class="social-gruop__item">
                                         <a class="social-gruop__link list" href="">
-                                            <svg class="social-gruop__icon">
+                                            <svg class="social-gruop__icon" width="20" height="20">
                                                 <use href="./images/sprite-original.svg#icon-instagram"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="social-gruop__item">
                                         <a class="social-gruop__link list" href="">
-                                            <svg class="social-gruop__icon">
+                                            <svg class="social-gruop__icon" width="20" height="20">
                                                 <use href="./images/sprite-original.svg#icon-twitter"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="social-gruop__item">
                                         <a class="social-gruop__link list" href="">
-                                            <svg class="social-gruop__icon">
+                                            <svg class="social-gruop__icon" width="20" height="20">
                                                 <use href="./images/sprite-original.svg#icon-facebook"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="social-gruop__item">
                                         <a class="social-gruop__link list" href="">
-                                            <svg class="social-gruop__icon">
+                                            <svg class="social-gruop__icon" width="20" height="20">
                                                 <use href="./images/sprite-original.svg#icon-linkedin"></use>
                                             </svg>
                                         </a>
@@ -347,14 +368,14 @@
                                 <ul class="social-gruop list">
                                     <li class="social-gruop__item">
                                         <a class="social-gruop__link list" href="">
-                                            <svg class="social-gruop__icon">
+                                            <svg class="social-gruop__icon" width="20" height="20">
                                                 <use href="./images/sprite-original.svg#icon-instagram"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="social-gruop__item">
                                         <a class="social-gruop__link list" href="">
-                                            <svg class="social-gruop__icon">
+                                            <svg class="social-gruop__icon" width="20" height="20">
                                                 <use href="./images/sprite-original.svg#icon-twitter"></use>
                                             </svg>
                                         </a>
@@ -380,57 +401,57 @@
                     </ul>
                 </div>
             </section>
-            <section class="section">
+             <section class="section">
                 <h2 class="clients list">Постоянные клиенты</h2>
                 <ul class="clients__list list">
                     <li class="clients__item">
                         <a class="clients__link" href="">
                             <svg class="clients__icon">
                                 <use href="./images/sprite-original.svg#iconLogo-company-"></use>
-                            </svg>
+                            </svg> 
                         </a>
                     </li>
                     <li class="clients__item">
                         <a class="clients__link" href="">
-                            <svg class="clients__icon">
+                             <svg class="clients__icon">
                                 <use href="./images/sprite-original.svg#icon-Logo-company1"></use>
-                            </svg>
+                            </svg> 
                         </a>
                     </li>
                     <li class="clients__item">
                         <a class="clients__link" href="">
-                            <svg class="clients__icon">
+                             <svg class="clients__icon">
                                 <use href="./images/sprite-original.svg#icon-Logo-company2"></use>
                             </svg>
                         </a>
                     </li>   
                     <li class="clients__item">
                         <a class="clients__link" href="">
-                            <svg class="clients__icon">
+                             <svg class="clients__icon">
                                 <use href="./images/sprite-original.svg#icon-Logo-company3"></use>
-                            </svg>
+                            </svg> 
                         </a>
                     </li>
                     <li class="clients__item">
                         <a class="clients__link" href="">
                             <svg class="clients__icon">
                                 <use href="./images/sprite-original.svg#icon-Logo-company4"></use>
-                            </svg>
+                            </svg> 
                         </a>
                     </li>
                     <li class="clients__item">
                         <a class="clients__link" href="">
                             <svg class="clients__icon">
                                 <use href="./images/sprite-original.svg#icon-Logo-company5"></use>
-                            </svg>
+                            </svg> 
                         </a>
                     </li>
                 </ul>
-            </section>
+            </section> 
         </main>
         
         <!-- Подвал страницы (footer) -->
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div class="container addres-list">
                     <div class="addres-gruop">
                         <a class="site-nav__logo footer__site-nav__logo" href="./index.html"><span class="footer__site-nav__logo--color">Web</span>Studio</a>
@@ -502,11 +523,9 @@
                     </div>
                 </form>
             </div>
-        </footer>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-        crossorigin="anonymous"></script>
-    <script src="./js/mobile-menu.js"></script>
+        </footer> -->
+  
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

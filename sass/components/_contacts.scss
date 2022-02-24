@@ -1,5 +1,5 @@
 .contacts__link {
-  display: none;
+  // display: none;
   color: $primary-text-color;
   text-decoration: none;
   font-weight: 500;
@@ -13,6 +13,12 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+}
+
+@media screen and (min-width: 320px), (min-width: 480px) {
+  .contacts__link {
+    display: none;
   }
 }
 

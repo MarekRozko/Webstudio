@@ -1,5 +1,6 @@
 .section {
-  @extend %section;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .container {
   @extend %container;
@@ -14,27 +15,45 @@
 }
 .team {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.17px;
   text-align: center;
   color: $title-text-color;
   margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 .team__list {
-  display: flex;
+  margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
 }
 .team__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: $primary-bg-color;
-  margin-right: 30px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 4 - 30px);
+  }
 }
-.team__item:last-child {
-  margin-right: 0;
-}
+
 .team__img {
-  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -46,17 +65,16 @@
   color: $title-text-color;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.18;
+  text-align: center;
   margin-bottom: 10px;
 }
 .team__posicion {
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.18x;
   margin-bottom: 16px;
 }
-.team__subtitle {
-  color: $title-text-color;
-}
+
 .team-section {
   background-color: $backgraund-button-and-team-section-color;
 }
@@ -79,6 +97,7 @@
   fill: currentColor;
 }
 .social-gruop__link {
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;

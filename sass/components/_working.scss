@@ -6,10 +6,7 @@
 .container {
   @extend %container;
 }
-.work {
-  text-align: center;
-  margin-bottom: 50px;
-}
+
 .work__text {
   position: absolute;
   display: flex;
@@ -27,7 +24,7 @@
   color: $primary-bg-color;
 }
 .working {
-  padding-bottom: 94px;
+  display: none;
 }
 .work__list {
   display: flex;
@@ -52,4 +49,6 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
 }
