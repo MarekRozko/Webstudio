@@ -3,8 +3,26 @@
   .site-nav__sprit,
   .site-nav__list {
     display: none;
+    @media screen and(min-width:768px) {
+      display: flex;
+    }
   }
 }
+.site-nav__list,
+.page-header,
+.site-nav,
+.contacts {
+  @media screen and(min-width:768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .site-nav__link {
   display: flex;
   padding-top: 32px;
@@ -24,6 +42,10 @@
 }
 .site-nav__list {
   margin-left: 93px;
+  @media screen and(min-width:768px) {
+    display: flex;
+    margin-left: 88px;
+  }
 }
 .site-nav__item {
   position: relative;
@@ -44,6 +66,9 @@
   background-color: $accent-color;
   border-radius: 2px;
   cursor: pointer;
+  @media screen and(min-width:768px) {
+    display: flex;
+  }
 }
 
 .site-nav__link--active {
@@ -57,4 +82,7 @@
 }
 .site-nav__list {
   @extend %list;
+}
+.hed-line {
+  border-bottom: 1px solid #ececec;
 }

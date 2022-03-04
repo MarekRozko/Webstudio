@@ -13,11 +13,21 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/overlay-mob-1x.jpeg);
+    url(/images/overlay-mob-1x-min.jpg);
 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/overlay-mob-2x-min.jpg);
+  }
   @media screen and (min-width: 768px) {
     margin: 0 auto;
     max-width: 768px;
@@ -29,11 +39,40 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/overlay-tab-1x.jpeg);
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+      url(/images/overlay-tab-1x-min.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/images/overlay-tab-2x-min.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0 auto;
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/overlay-desk-1x-min.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/images/overlay-desk-2x-min.jpg);
+    }
   }
 }
 
@@ -48,6 +87,12 @@
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {

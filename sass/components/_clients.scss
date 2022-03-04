@@ -6,7 +6,9 @@
     padding-bottom: 94px;
   }
 }
-
+.container {
+  @extend %container;
+}
 .clients,
 .clients__list {
   @extend %list;
@@ -24,14 +26,25 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
   }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
 }
 .clients__list {
   margin-left: -30px;
   margin-bottom: -30px;
+  @media screen and (max-width: 479px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
   @media screen and (min-width: 480px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
   }
   @media screen and (min-width: 768px) {
     display: flex;
@@ -53,7 +66,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 210;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;

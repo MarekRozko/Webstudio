@@ -14,7 +14,6 @@
   cursor: pointer;
   border-radius: 4px;
   border: $backgraund-button-and-team-section-color;
-  text-align: center;
   padding: 6px 22px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -27,11 +26,28 @@
 }
 .button-set {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
+  }
 }
 .button-set__item {
   margin-right: 8px;
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+.button-set__item:nth-child(n + 4) {
+  margin-bottom: 0;
 }
 .button-set__item:last-child {
   margin-right: 0;

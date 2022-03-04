@@ -2,11 +2,12 @@
   margin-left: auto;
 }
 .subscribe__list {
-  display: flex;
+  display: inline-block;
 }
 .subscribe__list,
 .subscribe {
   @extend %list;
+  display: inline-flex;
 }
 .subscribe__text {
   margin-top: 0;
@@ -40,7 +41,6 @@
 }
 .subscribe__buttons {
   display: flex;
-  margin-left: 12px;
   padding: 0;
   border: 0;
   padding: 10px 28px 10px 29px;
