@@ -919,7 +919,7 @@ img {
 }
 
 .mob-menu-list {
-  margin: 0;
+  padding: 0;
 }
 
 .mob-menu-list__link--active {
@@ -2159,7 +2159,7 @@ img {
   height: 100%;
   top: 0;
   left: 0;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.6;
   padding: 77px 24px;
   color: #ffffff;
@@ -2174,7 +2174,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .foto-card__text {
-    font-size: 18px;
     padding: 49px 24px 77px;
   }
 }
@@ -2186,6 +2185,12 @@ img {
 }
 
 .foto-card__posicion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 402px;
 }
 

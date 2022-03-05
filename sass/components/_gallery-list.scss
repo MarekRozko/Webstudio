@@ -29,7 +29,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.6;
   padding: 77px 24px;
   color: #ffffff;
@@ -37,7 +37,6 @@
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 768px) {
-    font-size: 18px;
     padding: 49px 24px 77px;
   }
   @media screen and (min-width: 1200px) {
@@ -46,6 +45,8 @@
 }
 
 .foto-card__posicion {
+  display: flex;
+  justify-content: center;
   width: 402px;
   @media screen and (min-width: 768px) {
     width: 306px;
