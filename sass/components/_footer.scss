@@ -108,6 +108,11 @@
     display: inline-flex;
   }
 }
+.subscribe__list {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
 .subscribe__text {
   margin-top: 0;
   font-weight: 700;
@@ -144,6 +149,7 @@
   @media screen and (min-width: 1200px) {
     width: 358px;
     margin-bottom: 0;
+    margin-right: 12px;
   }
 }
 .subscribe__input::placeholder {

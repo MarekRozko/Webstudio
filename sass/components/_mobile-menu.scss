@@ -64,6 +64,7 @@
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
+    overflow-y: scroll;
     .container-mobile {
       height: 100%;
       display: flex;
@@ -75,6 +76,7 @@
     display: none;
   }
 }
+
 .mob-menu-list__item {
   @extend %list;
 }
