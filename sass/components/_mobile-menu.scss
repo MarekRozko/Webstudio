@@ -89,9 +89,7 @@
   display: inline-flex;
   margin-bottom: 32px;
 }
-.mob-contacts__mail {
-  margin-bottom: 64px;
-}
+
 .mob-contacts__tel {
   font-weight: 500;
   font-size: 34px;
@@ -105,6 +103,7 @@
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: $primary-text-color;
+  margin-bottom: 0;
 }
 .mob-contacts {
   margin-bottom: 64px;
