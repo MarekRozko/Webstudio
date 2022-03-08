@@ -130,7 +130,7 @@
 }
 .subscribe__input {
   height: 50px;
-  width: 450px;
+  width: 100%;
   padding-top: 15px;
   padding-left: 16px;
   padding-bottom: 15px;
@@ -141,10 +141,7 @@
   cursor: pointer;
   color: $primary-bg-color;
   margin-bottom: 20px;
-  @media screen and (min-width: 320px) {
-    width: 290px;
-  }
-  @media screen and (min-width: 480px) and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 450px;
   }
   @media screen and (min-width: 1200px) {

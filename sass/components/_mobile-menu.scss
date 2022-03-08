@@ -38,7 +38,9 @@
   margin: 0;
   padding: 0;
   border: none;
+  color: #212121;
   color: currentColor;
+  cursor: pointer;
   background-color: transparent;
   &:hover,
   &:focus {
@@ -52,7 +54,7 @@
   }
 }
 .mob-menu {
-  @media screen and(min-width:320px) and (max-width: 480px) {
+  @media screen and(max-width: 480px) {
     position: fixed;
     background-color: #ffffff;
     z-index: 1111;
