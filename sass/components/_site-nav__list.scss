@@ -10,8 +10,7 @@
 }
 .site-nav__list,
 .page-header,
-.site-nav,
-.contacts {
+.site-nav {
   @media screen and(min-width:768px) {
     display: flex;
     justify-content: space-between;
@@ -85,4 +84,7 @@
 }
 .hed-line {
   border-bottom: 1px solid #ececec;
+}
+.container {
+  @extend %container;
 }

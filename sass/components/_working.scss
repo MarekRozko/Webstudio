@@ -3,9 +3,6 @@
 .work__text {
   @extend %list;
 }
-.container {
-  @extend %container;
-}
 
 .work__text {
   position: absolute;
@@ -42,11 +39,7 @@
     display: flex;
   }
 }
-.work__img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
 .work__thumb {
   position: relative;
   width: 370px;

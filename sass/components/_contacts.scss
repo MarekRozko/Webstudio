@@ -71,12 +71,7 @@
 .addres__title {
   @extend %list;
 }
-.contact-footer__contact__link {
-  padding: 0;
-}
-.contact-footer__contacts__item {
-  margin-left: 0;
-}
+
 .contact-footer__contact__link {
   color: $primary-text-color;
   text-decoration: none;
@@ -106,7 +101,4 @@
 .addres-list {
   display: flex;
   align-items: baseline;
-}
-.addres {
-  display: block;
 }

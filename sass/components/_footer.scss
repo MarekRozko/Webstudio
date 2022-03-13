@@ -9,9 +9,7 @@
     display: flex;
   }
 }
-.container {
-  @extend %container;
-}
+
 .addres-list {
   display: inline-block;
   text-align: center;
