@@ -770,6 +770,10 @@ body.menu-open,
   text-decoration: none;
 }
 
+.mob-menu-list__link:hover, .mob-menu-list__link:focus {
+  color: #2196f3;
+}
+
 .mob-soc-list__link {
   text-decoration: none;
   font-weight: 500;
@@ -810,7 +814,6 @@ body.menu-open,
   padding: 0;
   border: none;
   color: #212121;
-  color: currentColor;
   cursor: pointer;
   background-color: transparent;
 }
@@ -833,6 +836,10 @@ body.menu-open,
   .menu-close-btn {
     display: none;
   }
+}
+
+.icon-mob-menu {
+  fill: currentColor;
 }
 
 @media screen and (max-width: 480px) {

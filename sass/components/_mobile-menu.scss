@@ -5,6 +5,10 @@
   letter-spacing: 0.02em;
   color: $title-text-color;
   text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 .mob-soc-list__link {
   text-decoration: none;
@@ -39,7 +43,6 @@
   padding: 0;
   border: none;
   color: #212121;
-  color: currentColor;
   cursor: pointer;
   background-color: transparent;
   &:hover,
@@ -52,6 +55,9 @@
   @media screen and(min-width:1200px) {
     display: none;
   }
+}
+.icon-mob-menu {
+  fill: currentColor;
 }
 .mob-menu {
   @media screen and(max-width: 480px) {
