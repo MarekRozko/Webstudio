@@ -353,7 +353,7 @@ body.menu-open,
 }
 
 .site-nav__logo {
-  display: block;
+  display: inline-block;
   padding-top: 16px;
   padding-bottom: 16px;
   color: #212121;
@@ -2144,7 +2144,7 @@ body.menu-open,
 
 @media screen and (min-width: 1200px) {
   .foto-card__posicion {
-    width: 370px;
+    width: 322px;
   }
 }
 
