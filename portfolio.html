@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio">
     <title>Портфолио</title>
-    <link rel="stylesheet" href="./css/main-original.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body>
         <!-- Шапка сайта(header) -->
@@ -25,7 +26,7 @@
                             <div class="site-nav__sprit list"></div>
                         </li>
                         <li class="site-nav__item">
-                            <a class="site-nav__link" href="">Контакты</a>
+                            <a class="site-nav__link" href="/">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -48,7 +49,7 @@
                         </a>
                     </li>
                 </ul>
-                <button type="button" class="menu-open-btn">
+                <button type="button" class="menu-open-btn" aria-label="open button">
                     <svg width="40" height="40">
                         <use href="./images/sprite-original.svg#menu-mobile"></use>
                     </svg>
@@ -56,7 +57,7 @@
                 <div class="mob-menu is-hidden">
                     <div class="container-mobile">
                         <div class="mob-menu-top">
-                            <button type="button" class="menu-close-btn">
+                            <button type="button" class="menu-close-btn" aria-label="close button">
                                 <svg width="40" height="40">
                                     <use href="./images/sprite-original.svg#close-mobile"></use>
                                 </svg>
@@ -69,7 +70,7 @@
                                     <a class="mob-menu-list__link mob-menu-list__link--active" href="./portfolio.html">Портфолио</a>
                                 </li>
                                 <li class="mob-menu-list__item">
-                                    <a class="mob-menu-list__link" href="">Контакты</a>
+                                    <a class="mob-menu-list__link" href="/">Контакты</a>
                                 </li>
                             </ul>
                         </div>
@@ -81,16 +82,16 @@
                             </div>
                             <ul class="mob-soc-list list">
                                 <li class="mob-soc-list__item">
-                                    <a href="" class="mob-soc-list__link">Instagram</a>
+                                    <a href="https://www.instagram.com/" class="mob-soc-list__link">Instagram</a>
                                 </li>
                                 <li class="mob-soc-list__item">
-                                    <a href="" class="mob-soc-list__link">Twittet</a>
+                                    <a href="https://www.twitter.com/" class="mob-soc-list__link">Twittet</a>
                                 </li>
                                 <li class="mob-soc-list__item">
-                                    <a href="" class="mob-soc-list__link">Facebook</a>
+                                    <a href="https://www.facebook.com/" class="mob-soc-list__link">Facebook</a>
                                 </li>
                                 <li class="mob-soc-list__item">
-                                    <a href="" class="mob-soc-list__link">Linkedin</a>
+                                    <a href="https://www.linkedin.com/" class="mob-soc-list__link">Linkedin</a>
                                 </li>
                             </ul>
                         </div>
@@ -105,11 +106,11 @@
                 <div class="container">
                     <h1 hidden class="gallery list">Наши работы</h1>
                     <ul class="button-set list">
-                        <li class="button-set__item"><button class="button-set__button active" type="button">Все</button></li>
-                        <li class="button-set__item"><button class="button-set__button" type="button">Веб-сайты</button></li>
-                        <li class="button-set__item"><button class="button-set__button" type="button">Приложения</button></li>
-                        <li class="button-set__item"><button class="button-set__button" type="button">Дизайн</button></li>
-                        <li class="button-set__item"><button class="button-set__button" type="button">Маркетинг</button></li>
+                        <li class="button-set__item"><button class="button-set__button active" type="button" aria-label="all">Все</button></li>
+                        <li class="button-set__item"><button class="button-set__button" type="button" aria-label="Web sites">Веб-сайты</button></li>
+                        <li class="button-set__item"><button class="button-set__button" type="button"  aria-label="apps">Приложения</button></li>
+                        <li class="button-set__item"><button class="button-set__button" type="button" aria-label="design">Дизайн</button></li>
+                        <li class="button-set__item"><button class="button-set__button" type="button" aria-label="marketing">Маркетинг</button></li>
                     </ul>
                     
                     
@@ -138,9 +139,12 @@
                             <a href="" class="gallery-list__link">
                                <div class="foto-card">
                                 <picture>
-                                    <source srcset="./images/poster-desk-1x-min.jpg 1x, ./images/poster-desk-2x-min.jpg 2x" media="(min-width:1200px)">
-                                    <source srcset="./images/poster-tab-1x-min.jpg 1x, ./images/poster-tab-2x-min.jpg 2x" media="(min-width:768px)">
-                                    <source srcset="./images/poster-tab-1x-min.jpg 1x, ./images/poster-tab-2x-min.jpg 2x" media="(min-width:480px)">
+                                    <source srcset="./images/poster-desk-1x-min.jpg 1x, 
+                                    ./images/poster-desk-2x-min.jpg 2x" media="(min-width:1200px)">
+                                    <source srcset="./images/poster-tab-1x-min.jpg 1x, 
+                                    ./images/poster-tab-2x-min.jpg 2x" media="(min-width:768px)">
+                                    <source srcset="./images/poster-mob-1x-min.jpg 1x, 
+                                    ./images/poster-mob-2x-min.jpeg 2x" media="(min-width:480px)">
                                     <img class="foto-card__img" src="./images/poster.jpeg" alt="Постер с баскетболистами" width="370">
                                 </picture>
                                    
@@ -157,9 +161,12 @@
                             <a href="" class="gallery-list__link">
                                 <div class="foto-card">
                                     <picture>
-                                        <source srcset="./images/restuarent-desk-1x-min.jpg 1x, ./images/restuarent-desk-2x-min.jpg 2x" media="(min-width:1200px)">
-                                        <source srcset="./images/restuarent-tab-1x-min.jpg 1x, ./images/restuarent-tab-2x-min.jpg 2x" media="(min-width:768px)">
-                                        <source srcset="./images/restuarent-tab-1x-min.jpg 1x, ./images/restuarent-tab-2x-min.jpg 2x" media="(min-width:480px)">
+                                        <source srcset="./images/restuarent-desk-1x-min.jpg 1x, 
+                                        ./images/restuarent-desk-2x-min.jpg 2x" media="(min-width:1200px)">
+                                        <source srcset="./images/restuarent-tab-1x-min.jpg 1x, 
+                                        ./images/restuarent-tab-2x-min.jpg 2x" media="(min-width:768px)">
+                                        <source srcset="./images/restuarent-mob-1x-min.jpg 1x, 
+                                        ./images/restuarent-mob-2x.-min.jpg 2x" media="(min-width:480px)">
                                         <img class="foto-card__img" src="./images/restuarent.jpeg" alt="Эмблема ресторана" width="370">
                                     </picture>
                                     
@@ -176,11 +183,14 @@
                             <a href="" class="gallery-list__link">
                                <div class="foto-card">
                                     <picture>
-                                        <source srcset="./images/headphones-desk-1x-min.jpg 1x, ./images/headphones-desk-2x-min.jpg 2x"
+                                        <source srcset="./images/headphones-desk-1x-min.jpg 1x, 
+                                        ./images/headphones-desk-2x-min.jpg 2x"
                                             media="(min-width:1200px)">
-                                        <source srcset="./images/headphones-tab-1x-min.jpg 1x, ./images/headphones-tab-2x-min.jpg 2x"
+                                        <source srcset="./images/headphones-tab-1x-min.jpg 1x, 
+                                        ./images/headphones-tab-2x-min.jpg 2x"
                                             media="(min-width:768px)">
-                                        <source srcset="./images/headphones-tab-1x-min.jpg 1x, ./images/headphones-tab-2x-min.jpg 2x"
+                                        <source srcset="./images/headphones-mob-1x-min.jpg 1x, 
+                                        ./images/headphones-mob-2x-min.jpg 2x"
                                             media="(min-width:480px)">
                                         <img class="foto-card__img" src="./images/headphones.jpeg" alt="Наущники" width="370">
                                     </picture>
@@ -198,11 +208,14 @@
                             <a href="" class="gallery-list__link">
                                 <div class="foto-card">
                                     <picture>
-                                        <source srcset="./images/boxes-desk-1x-min.jpg 1x, ./images/boxes-desk-2x-min.jpg 2x"
+                                        <source srcset="./images/boxes-desk-1x-min.jpg 1x, 
+                                        ./images/boxes-desk-2x-min.jpg 2x"
                                             media="(min-width:1200px)">
-                                        <source srcset="./images/boxes-tab-1x-min.jpg 1x, ./images/boxes-tab-2x-min.jpg 2x"
+                                        <source srcset="./images/boxes-tab-1x-min.jpg 1x, 
+                                        ./images/boxes-tab-2x-min.jpg 2x"
                                             media="(min-width:768px)">
-                                        <source srcset="./images/boxes-tab-1x-min.jpg 1x, ./images/boxes-tab-2x-min.jpg 2x"
+                                        <source srcset="./images/boxes-mob-1x-min.jpg 1x, 
+                                        ./images/boxes-mob-2x-min.jpg 2x"
                                             media="(min-width:480px)">
                                         <img class="foto-card__img" src="./images/boxes.jpeg" alt="Две коробки" width="370">
                                     </picture>
@@ -220,9 +233,12 @@
                             <a href="" class="gallery-list__link">
                                 <div class="foto-card">
                                     <picture>
-                                        <source srcset="./images/macbook-desk-1x-min.jpg 1x, ./images/macbook-desk-2x-min.jpg 2x" media="(min-width:1200px)">
-                                        <source srcset="./images/macbook-tab-1x-min.jpg 1x, ./images/macbook-tab-2x-min.jpg 2x" media="(min-width:768px)">
-                                        <source srcset="./images/macbook-tab-1x-min.jpg 1x, ./images/macbook-tab-2x-min.jpg 2x" media="(min-width:480px)">
+                                        <source srcset="./images/macbook-desk-1x-min.jpg 1x, 
+                                        ./images/macbook-desk-2x-min.jpg 2x" media="(min-width:1200px)">
+                                        <source srcset="./images/macbook-tab-1x-min.jpg 1x, 
+                                        ./images/macbook-tab-2x-min.jpg 2x" media="(min-width:768px)">
+                                        <source srcset="./images/macbook-mob-1x-min.jpg 1x, 
+                                        ./images/macbook-mob-2x-min.jpg 2x" media="(min-width:480px)">
                                         <img class="foto-card__img" src="./images/macbook.jpeg" alt="Монитор" width="370">
                                     </picture>
                                     
@@ -239,10 +255,13 @@
                             <a href="" class="gallery-list__link">
                                 <div class="foto-card">
                                     <picture>
-                                        <source srcset="./images/magazine-desk-1x-min.jpg 1x, ./images/magazine-desk-2x-min.jpg 2x"
+                                        <source srcset="./images/magazine-desk-1x-min.jpg 1x, 
+                                        ./images/magazine-desk-2x-min.jpg 2x"
                                             media="(min-width:1200px)">
-                                        <source srcset="./images/magazine-tab-1x-min.jpg 1x, ./images/magazine-tab-2x-min.jpg 2x" media="(min-width:768px)">
-                                        <source srcset="./images/magazine-tab-1x-min.jpg 1x, ./images/magazine-tab-2x-min.jpg 2x" media="(min-width:480px)">
+                                        <source srcset="./images/magazine-tab-1x-min.jpg 1x, 
+                                        ./images/magazine-tab-2x-min.jpg 2x" media="(min-width:768px)">
+                                        <source srcset="./images/magazine-mob-1x-min.jpg 1x, 
+                                        ./images/magazine-mob-2x-min.jpg 2x" media="(min-width:480px)">
                                         <img class="foto-card__img" src="./images/magazine.jpeg" alt="Журнал" width="370">
                                     </picture>
                                     
@@ -259,10 +278,13 @@
                             <a href="" class="gallery-list__link">
                                 <div class="foto-card">
                                     <picture>
-                                        <source srcset="./images/label-desk-1x-min.jpg 1x, ./images/label-desk-2x-min.jpg 2x"
+                                        <source srcset="./images/label-desk-1x-min.jpg 1x, 
+                                        ./images/label-desk-2x-min.jpg 2x"
                                             media="(min-width:1200px)">
-                                        <source srcset="./images/lable-tab-1x-min.jpg 1x, ./images/lable-tab-2x-min.jpg 2x" media="(min-width:768px)">
-                                        <source srcset="./images/lable-tab-1x-min.jpg 1x, ./images/lable-tab-2x-min.jpg 2x" media="(min-width:480px)">
+                                        <source srcset="./images/lable-tab-1x-min.jpg 1x, 
+                                        ./images/lable-tab-2x-min.jpg 2x" media="(min-width:768px)">
+                                        <source srcset="./images/lable-mob-1x-min.jpg 1x, 
+                                        ./images/lable-mob-2x-min.jpg 2x" media="(min-width:480px)">
                                         <img class="foto-card__img" src="./images/lable.jpeg" alt="Этикетка от одежды" width="370">
                                     </picture>
                                     
@@ -279,9 +301,12 @@
                             <a href="" class="gallery-list__link">
                                 <div class="foto-card">
                                     <picture>
-                                        <source srcset="./images/macbook1-desk-1x-min.jpg 1x, ./images/macbook1-desk-2x-min.jpg 2x" media="(min-width:1200px)">
-                                        <source srcset="./images/macbook1-tab-1x-min.jpg 1x, ./images/macbook1-tab-2x-min.jpg 2x" media="(min-width:768px)">
-                                        <source srcset="./images/macbook1-tab-1x-min.jpg 1x, ./images/macbook1-tab-2x-min.jpg 2x" media="(min-width:480px)">
+                                        <source srcset="./images/macbook1-desk-1x-min.jpg 1x, 
+                                        ./images/macbook1-desk-2x-min.jpg 2x" media="(min-width:1200px)">
+                                        <source srcset="./images/macbook1-tab-1x-min.jpg 1x, 
+                                        ./images/macbook1-tab-2x-min.jpg 2x" media="(min-width:768px)">
+                                        <source srcset="./images/macbook1-mob-1x-min.jpg 1x, 
+                                        ./images/macbook1-mob-2x-min.jpg 2x" media="(min-width:480px)">
                                         <img class="foto-card__img" src="./images/macbook1.jpeg" alt="Ноутбук" width="370">
                                     </picture>
                                     
@@ -324,21 +349,21 @@
                         <p class="join list">присоединяйтесь</p>
                         <ul class="social-gruop list">
                             <li class="social-gruop__item social-gruop__social-gruop__item">
-                                <a class="social-gruop__link social-gruop__social-gruop__link list" href="">
+                                <a class="social-gruop__link social-gruop__social-gruop__link list" href="https://www.instagram.com/">
                                     <svg class="social-gruop__icon">
                                         <use href="./images/sprite-original.svg#icon-instagram"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social-gruop__item social-gruop__social-gruop__item">
-                                <a class="social-gruop__link social-gruop__social-gruop__link list" href="">
+                                <a class="social-gruop__link social-gruop__social-gruop__link list" href="https://www.twitter.com/">
                                     <svg class="social-gruop__icon">
                                         <use href="./images/sprite-original.svg#icon-twitter"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social-gruop__item social-gruop__social-gruop__item">
-                                <a class="social-gruop__link social-gruop__social-gruop__link list" href="">
+                                <a class="social-gruop__link social-gruop__social-gruop__link list" href="https://www.facebook.com/">
                                     <svg class="social-gruop__icon">
                                         <use href="./images/sprite-original.svg#icon-facebook"></use>
                                     </svg>
@@ -346,7 +371,7 @@
                             </li>
                             <li class="social-gruop__item
                                                             social-gruop__social-gruop__item">
-                                <a class="social-gruop__link social-gruop__social-gruop__link list" href="">
+                                <a class="social-gruop__link social-gruop__social-gruop__link list" href="https://www.linkedin.com/">
                                     <svg class="social-gruop__icon">
                                         <use href="./images/sprite-original.svg#icon-linkedin"></use>
                                     </svg>
@@ -374,6 +399,6 @@
                 </form>
             </div>
         </footer>
-        <script src="./js/mobile-menu.js" async></script>
+        <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
