@@ -1,9 +1,10 @@
 .contacts__link {
+  display: flex;
   color: $primary-text-color;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   align-items: center;
   padding-top: 32px;
@@ -20,11 +21,39 @@
     display: flex;
     padding: 0;
   }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+    display: inline-flex;
+    padding: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
-.contacts__icon {
+.contacts__icon__mail {
   fill: currentColor;
   margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    width: 14px;
+    height: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+.contacts__icon__tel {
+  fill: currentColor;
+  margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    width: 10px;
+    height: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
 }
 .contacts {
   @extend %list;
@@ -37,10 +66,10 @@
     padding-bottom: 21px;
   }
   @media screen and (min-width: 1200px) {
+    font-size: 14px;
     display: inline-flex;
     flex-direction: row;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 0;
   }
 }
 .contact-footer {

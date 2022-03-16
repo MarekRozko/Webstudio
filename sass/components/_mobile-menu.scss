@@ -60,7 +60,7 @@
   fill: currentColor;
 }
 .mob-menu {
-  @media screen and(max-width: 480px) {
+  @media screen and(min-width: 320px) {
     position: fixed;
     background-color: #ffffff;
     z-index: 1111;
@@ -87,8 +87,6 @@
 
 .mob-menu-list__item {
   @extend %list;
-}
-.mob-menu-list__item {
   &:not(:last-child) {
     margin-bottom: 24px;
   }
