@@ -687,6 +687,12 @@ body.menu-open,
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    margin-bottom: 0;
+  }
+}
+
 .contacts__item:last-child {
   margin-bottom: 0;
 }
