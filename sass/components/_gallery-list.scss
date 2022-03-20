@@ -23,13 +23,18 @@
   height: 100%;
   top: 0;
   left: 0;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.56;
   padding: 77px 24px;
   color: #ffffff;
+  overflow: scroll;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 480px) {
+    padding: 77px 24px;
+    font-size: 18px;
+  }
   @media screen and (min-width: 768px) {
     padding: 49px 24px 77px;
   }
@@ -41,7 +46,7 @@
 .foto-card__posicion {
   display: flex;
   justify-content: center;
-  width: 402px;
+  width: 100%;
   @media screen and (min-width: 768px) {
     width: 306px;
   }

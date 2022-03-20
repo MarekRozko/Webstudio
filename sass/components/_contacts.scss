@@ -26,8 +26,6 @@
     line-height: 1.14;
     display: inline-flex;
     padding: 0;
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 }
 
@@ -62,8 +60,6 @@
   @media screen and (min-width: 768px) {
     flex-direction: column;
     margin-left: 0;
-    padding-top: 21px;
-    padding-bottom: 21px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
@@ -115,6 +111,24 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 0;
   margin: 0;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.contacts__link__mail {
+  padding-top: 21px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+.contacts__link__tel {
+  padding-bottom: 21px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .contact-footer__contacts__item {
   margin-bottom: 8px;

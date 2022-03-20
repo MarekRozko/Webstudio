@@ -5,24 +5,26 @@
   padding-bottom: 60px;
   display: inline-block;
   width: 100%;
-  @media screen and(min-width:1200px) {
-    display: flex;
-  }
 }
 
 .addres-list {
-  display: inline-block;
+  display: block;
   text-align: center;
+
   @media screen and(min-width:1200px) {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
   }
 }
 .footer-container {
+  margin-bottom: 60px;
   @media screen and(min-width:768px) {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 60px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 0;
   }
 }
 
@@ -51,16 +53,14 @@
 }
 .addres-gruop {
   margin-bottom: 60px;
+  @media screen and(min-width:768px) {
+    margin-bottom: 0;
+  }
   @media screen and(min-width:1200px) {
     justify-content: flex-start;
-    margin-right: 70px;
   }
 }
-.addres-gruop {
-  @media screen and(min-width:768px) {
-    align-content: flex-start;
-  }
-}
+
 .join {
   font-weight: 700;
   font-size: 14px;
@@ -68,11 +68,6 @@
   text-transform: uppercase;
   color: $primary-bg-color;
   margin-bottom: 20px;
-}
-.subscribe {
-  @media screen and(min-width:768px) {
-    display: block;
-  }
 }
 
 .social-gruop__social-gruop__link {
@@ -97,19 +92,29 @@
   margin-right: 0;
 }
 .subscribe {
-  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 .social-footer {
-  margin-bottom: 60px;
   .subscribe__list,
   .subscribe {
     @extend %list;
     display: inline-flex;
   }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 .subscribe__list {
   @media screen and (min-width: 1200px) {
     display: flex;
+  }
+}
+.social-footer {
+  @media screen and (min-width: 1200px) {
+    flex-basis: auto;
+    margin-left: 70px;
   }
 }
 .subscribe__text {
@@ -139,7 +144,7 @@
   cursor: pointer;
   color: $primary-bg-color;
   margin-bottom: 20px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     width: 450px;
   }
   @media screen and (min-width: 1200px) {
