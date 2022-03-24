@@ -10,14 +10,15 @@
 .addres-list {
   display: block;
   text-align: center;
+  flex-basis: auto;
 
   @media screen and(min-width:1200px) {
     display: flex;
-    align-items: baseline;
   }
 }
 .footer-container {
   margin-bottom: 60px;
+  flex-basis: auto;
   @media screen and(min-width:768px) {
     display: flex;
     justify-content: space-around;
@@ -25,6 +26,7 @@
   }
   @media screen and(min-width:1200px) {
     margin-bottom: 0;
+    align-items: baseline;
   }
 }
 
@@ -113,7 +115,6 @@
 }
 .social-footer {
   @media screen and (min-width: 1200px) {
-    flex-basis: auto;
     margin-left: 70px;
   }
 }

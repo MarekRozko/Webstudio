@@ -20,9 +20,12 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $primary-text-color;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-  padding-right: 10px;
-  padding-left: 10px;
+
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+
   @media screen and(max-width:479px) {
     font-size: 4vw;
   }
@@ -31,12 +34,19 @@
     color: $accent-color;
   }
 }
+.mob-soc-list__item {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mob-soc-list__item:last-child {
+  border-right: 0;
+}
 .mob-soc-list__item:first-child .mob-soc-list__link {
   padding-left: 0;
+  margin-left: 0;
 }
 .mob-soc-list__item:last-child .mob-soc-list__link {
-  border-right: 0;
   padding-right: 0;
+  margin-right: 0;
 }
 .mob-soc-list {
   @extend %list;
