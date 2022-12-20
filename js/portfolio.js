@@ -50,19 +50,19 @@ class Portfolio {
   categories = [
     {
       id: 1,
-      name: "web",
+      name: "Веб-сайт",
     },
     {
       id: 2,
-      name: "app",
+      name: "Приложение",
     },
     {
       id: 3,
-      name: "design",
+      name: "Дизайн",
     },
     {
       id: 4,
-      name: "marketing",
+      name: "Маркетинг",
     },
   ];
 
