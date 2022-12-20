@@ -97,7 +97,7 @@ class Portfolio {
         const li = document.createElement("li");
         li.classList.add("gallery-list__item");
         const content = `
-                <a class="gallery-list__link" href="">
+                <a class="gallery-list__link" href="#">
                                 <div class="foto-card">
                                     <img class="foto-card__img" src="${
                                       project.img
